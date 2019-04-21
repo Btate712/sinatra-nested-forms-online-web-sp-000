@@ -12,5 +12,9 @@ module FormsLab
 
       erb :'pirates/new'
     end
+
+    post '/new' do
+      binding.pry
+    end
   end
 end
