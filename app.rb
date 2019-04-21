@@ -15,9 +15,9 @@ module FormsLab
 
     post '/new' do
       pirate = Pirate.new
-      pirate.name = params[:pirates][:name]
-      pirate.height = params[:pirates][:height]
-      pirate.weight = params[:pirates][:weight]
+      pirate.name = params[:pirate][:name]
+      pirate.height = params[:pirate][:height]
+      pirate.weight = params[:pirate][:weight]
       binding.pry
     end
   end
