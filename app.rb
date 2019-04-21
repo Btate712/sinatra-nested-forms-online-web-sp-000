@@ -18,7 +18,7 @@ module FormsLab
       pirate.name = params[:pirates][:name]
       pirate.height = params[:pirates][:height]
       pirate.weight = params[:pirates][:weight]
-      puts pirate.name
+      puts pirate
     end
   end
 end
