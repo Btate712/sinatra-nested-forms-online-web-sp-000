@@ -1,5 +1,5 @@
 class Pirate
-  attr_accessor :name, :type, :booty
+  attr_accessor :name, :height, :weight
 
   @@all = []
 
