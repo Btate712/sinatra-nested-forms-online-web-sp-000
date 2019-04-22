@@ -18,6 +18,15 @@ module FormsLab
       pirate.name = params[:pirate][:name]
       pirate.height = params[:pirate][:height]
       pirate.weight = params[:pirate][:weight]
+      pirate.save
+
+      params[:pirate][:ships].each do |ship_data|
+        ship = Ship.new
+        ship.name = ship_data[:name]
+        ship.type = ship_data[:type]
+        ship.booty = ship_data[:booty]
+        ship.save
+      end
       binding.pry
     end
   end
