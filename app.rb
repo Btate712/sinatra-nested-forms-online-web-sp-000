@@ -27,6 +27,8 @@ module FormsLab
         ship.booty = ship_data[:booty]
         ship.save
       end
+
+      erb :'pirates/show'
     end
   end
 end
