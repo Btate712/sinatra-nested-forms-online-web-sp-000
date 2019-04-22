@@ -27,7 +27,6 @@ module FormsLab
         ship.booty = ship_data[:booty]
         ship.save
       end
-      binding.pry
     end
   end
 end
