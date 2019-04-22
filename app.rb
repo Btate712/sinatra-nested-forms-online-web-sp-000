@@ -9,7 +9,8 @@ module FormsLab
     end
 
     get '/new' do
-
+      Pirate.clear
+      Ship.clear
       erb :'pirates/new'
     end
 
